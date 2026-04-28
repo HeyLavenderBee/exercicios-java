@@ -1,4 +1,4 @@
-package smarttv;
+package classes;
 
 import java.util.Scanner;
 
