@@ -8,7 +8,6 @@ import pilarespoo.apps.Telegram;
 public class ComputadorUsuario {
 	public static void main(String[] args) {
 		ServicoMensagemInstantanea smi = null;
-		
 		String appEscolhido = "msn";
 		
 		if("msn".equals(appEscolhido)) {
