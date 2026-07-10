@@ -1,4 +1,4 @@
-package collectionsframework.list.ex1;
+package collectionsframework.list.operacoesbasicas.exercicio;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,9 @@ public class CarrinhoCompras {
 	public void removerItem(String nome) {
 		List<Item> itensParaRemover = new ArrayList<>();
 		for(Item t : carrinhoList) {
-			itensParaRemover.add(t);
+			if (t.getNome() == nome) {
+				itensParaRemover.add(t);
+			}
 		}
 		carrinhoList.removeAll(itensParaRemover);
 	}
@@ -41,7 +43,8 @@ public class CarrinhoCompras {
 		CarrinhoCompras carrinho = new CarrinhoCompras();
 		carrinho.adicionarItem("Sabonete", 1.2, 50);
 		carrinho.adicionarItem("Almofada", 30.50, 5);
-		System.out.println("Valor total do carrinho: "+carrinho.calcularValorTotal());
+		System.out.println("Valor total do carrinho: R$"+carrinho.calcularValorTotal());
+		carrinho.removerItem("Sabonete");
 		carrinho.exibirItens();
 	}
 }

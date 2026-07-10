@@ -1,4 +1,4 @@
-package collectionsframework.list.ex1;
+package collectionsframework.list.operacoesbasicas.exercicio;
 
 public class Item {
 	private String nome;
